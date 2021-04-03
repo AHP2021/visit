@@ -1,0 +1,1027 @@
+{
+	"info": {
+		"_postman_id": "6fe3bd1e-11d3-419e-bd83-283386776072",
+		"name": "Visit",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://127.0.0.1:8000/api/customer",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "apikey",
+					"apikey": {
+						"value": "Token",
+						"key": "Authorization",
+						"in": "header"
+					}
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": []
+				},
+				"url": "http://127.0.0.1:8000/api/customer"
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:8000/api/customer?name=&phone_num=&fav_doc",
+			"request": {
+				"auth": {
+					"type": "apikey",
+					"apikey": {
+						"value": "Token ",
+						"key": "Authorization",
+						"in": "header"
+					}
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "phone_num",
+							"value": "",
+							"type": "text"
+						},
+						{
+							"key": "name",
+							"value": "",
+							"type": "text"
+						},
+						{
+							"key": "fav_doc",
+							"value": "",
+							"type": "text"
+						}
+					]
+				},
+				"url": "http://127.0.0.1:8000/api/customer"
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:8000/api/customer/<int:customer_id>",
+			"request": {
+				"auth": {
+					"type": "apikey",
+					"apikey": {
+						"value": "Token ",
+						"key": "Authorization",
+						"in": "header"
+					}
+				},
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": []
+				},
+				"url": "http://127.0.0.1:8000/api/customer/<int:customer_id>"
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:8000/api/customer/<int:customer_id>",
+			"request": {
+				"auth": {
+					"type": "apikey",
+					"apikey": {
+						"value": "Token ",
+						"key": "Authorization",
+						"in": "header"
+					}
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "phone_num",
+							"value": "",
+							"type": "text"
+						},
+						{
+							"key": "name",
+							"value": "",
+							"type": "text"
+						},
+						{
+							"key": "fav_doc",
+							"value": "",
+							"type": "text"
+						}
+					]
+				},
+				"url": "http://127.0.0.1:8000/api/customer/<int:customer_id>"
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:8000/api/doctor",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "apikey",
+					"apikey": {
+						"value": "Token ",
+						"key": "Authorization",
+						"in": "header"
+					}
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": []
+				},
+				"url": "http://127.0.0.1:8000/api/doctor"
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:8000/api/doctor",
+			"request": {
+				"auth": {
+					"type": "apikey",
+					"apikey": {
+						"value": "Token",
+						"key": "Authorization",
+						"in": "header"
+					}
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "name",
+							"value": "",
+							"type": "text"
+						},
+						{
+							"key": "medical_num",
+							"value": "",
+							"type": "text"
+						},
+						{
+							"key": "phone_num",
+							"value": "",
+							"type": "text"
+						},
+						{
+							"key": "clinic_city",
+							"value": "",
+							"type": "text"
+						},
+						{
+							"key": "degree",
+							"value": "",
+							"type": "text"
+						},
+						{
+							"key": "working",
+							"value": "",
+							"type": "text"
+						},
+						{
+							"key": "specialty_id",
+							"value": "",
+							"type": "text"
+						},
+						{
+							"key": "visible_do",
+							"value": "",
+							"type": "text"
+						}
+					]
+				},
+				"url": "http://127.0.0.1:8000/api/doctor"
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:8000/api/doctor/<int:doctor_id>",
+			"request": {
+				"auth": {
+					"type": "apikey",
+					"apikey": {
+						"value": "Token",
+						"key": "Authorization",
+						"in": "header"
+					}
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "phone_num",
+							"value": "",
+							"type": "text"
+						},
+						{
+							"key": "clinic_city",
+							"value": "",
+							"type": "text"
+						},
+						{
+							"key": "working",
+							"value": "",
+							"type": "text"
+						}
+					]
+				},
+				"url": "http://127.0.0.1:8000/api/doctor/<int:doctor_id>"
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:8000/api/doctor/<int:doctor_id>",
+			"request": {
+				"auth": {
+					"type": "apikey",
+					"apikey": {
+						"value": "Token",
+						"key": "Authorization",
+						"in": "header"
+					}
+				},
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": []
+				},
+				"url": "http://127.0.0.1:8000/api/doctor/<int:doctor_id>"
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:8000/api/customer/login",
+			"request": {
+				"auth": {
+					"type": "apikey",
+					"apikey": {
+						"value": "Token",
+						"key": "Authorization",
+						"in": "header"
+					}
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "phone_num",
+							"value": "",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "",
+							"type": "text"
+						}
+					]
+				},
+				"url": "http://127.0.0.1:8000/api/customer/login"
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:8000/api/doctor/login",
+			"request": {
+				"auth": {
+					"type": "apikey",
+					"apikey": {
+						"value": "Token",
+						"key": "Authorization",
+						"in": "header"
+					}
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "medical_num",
+							"value": "",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "",
+							"type": "text"
+						}
+					]
+				},
+				"url": "http://127.0.0.1:8000/api/doctor/login"
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:8000/api/customer/search/v1",
+			"request": {
+				"auth": {
+					"type": "apikey",
+					"apikey": {
+						"value": "Token",
+						"key": "Authorization",
+						"in": "header"
+					}
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "ds",
+							"value": "",
+							"type": "text"
+						},
+						{
+							"key": "de",
+							"value": "",
+							"type": "text"
+						}
+					]
+				},
+				"url": "http://127.0.0.1:8000/api/customer/search/v1"
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:8000/api/customer/search/v2",
+			"request": {
+				"auth": {
+					"type": "apikey",
+					"apikey": {
+						"value": "Token",
+						"key": "Authorization",
+						"in": "header"
+					}
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "name",
+							"value": "",
+							"type": "text"
+						}
+					]
+				},
+				"url": "http://127.0.0.1:8000/api/customer/search/v2"
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:8000/api/comment",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "apikey",
+					"apikey": {
+						"value": "Token",
+						"key": "Authorization",
+						"in": "header"
+					}
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": []
+				},
+				"url": "http://127.0.0.1:8000/api/comment"
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:8000/api/comment",
+			"request": {
+				"auth": {
+					"type": "apikey",
+					"apikey": {
+						"value": "Token",
+						"key": "Authorization",
+						"in": "header"
+					}
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "customer_id",
+							"value": "",
+							"type": "text"
+						},
+						{
+							"key": "text_body",
+							"value": "",
+							"type": "text"
+						}
+					]
+				},
+				"url": "http://127.0.0.1:8000/api/comment"
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:8000/api/comment/<int:comment_id>",
+			"request": {
+				"auth": {
+					"type": "apikey",
+					"apikey": {
+						"value": "Token",
+						"key": "Authorization",
+						"in": "header"
+					}
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "customer_id",
+							"value": "",
+							"type": "text"
+						},
+						{
+							"key": "text_body",
+							"value": "",
+							"type": "text"
+						}
+					]
+				},
+				"url": "http://127.0.0.1:8000/api/comment/<int:comment_id>"
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:8000/api/comment/<int:comment_id>",
+			"request": {
+				"auth": {
+					"type": "apikey",
+					"apikey": {
+						"value": "Token",
+						"key": "Authorization",
+						"in": "header"
+					}
+				},
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": []
+				},
+				"url": "http://127.0.0.1:8000/api/comment/<int:comment_id>"
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:8000/api/visit",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "apikey",
+					"apikey": {
+						"value": "Token",
+						"key": "Authorization",
+						"in": "header"
+					}
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": []
+				},
+				"url": "http://127.0.0.1:8000/api/visit"
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:8000/api/visit",
+			"request": {
+				"auth": {
+					"type": "apikey",
+					"apikey": {
+						"value": "Token",
+						"key": "Authorization",
+						"in": "header"
+					}
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "customer_id",
+							"value": "",
+							"type": "text"
+						},
+						{
+							"key": "doctor_id",
+							"value": "",
+							"type": "text"
+						},
+						{
+							"key": "visit_date",
+							"value": "",
+							"type": "text"
+						}
+					]
+				},
+				"url": "http://127.0.0.1:8000/api/visit"
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:8000/api/visit/<int:visit_id>",
+			"request": {
+				"auth": {
+					"type": "apikey",
+					"apikey": {
+						"value": "Token",
+						"key": "Authorization",
+						"in": "header"
+					}
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "customer_id",
+							"value": "",
+							"type": "text"
+						},
+						{
+							"key": "doctor_id",
+							"value": "",
+							"type": "text"
+						},
+						{
+							"key": "visit_date",
+							"value": "",
+							"type": "text"
+						}
+					]
+				},
+				"url": "http://127.0.0.1:8000/api/visit/<int:visit_id>"
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:8000/api/visit/<int:visit_id>",
+			"request": {
+				"auth": {
+					"type": "apikey",
+					"apikey": {
+						"value": "Token",
+						"key": "Authorization",
+						"in": "header"
+					}
+				},
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": []
+				},
+				"url": "http://127.0.0.1:8000/api/visit/<int:visit_id>"
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:8000/api/specialty",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "apikey",
+					"apikey": {
+						"value": "Token",
+						"key": "Authorization",
+						"in": "header"
+					}
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": []
+				},
+				"url": "http://127.0.0.1:8000/api/specialty"
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:8000/api/specialty",
+			"request": {
+				"auth": {
+					"type": "apikey",
+					"apikey": {
+						"value": "Token",
+						"key": "Authorization",
+						"in": "header"
+					}
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "sp_name",
+							"value": "",
+							"type": "text"
+						},
+						{
+							"key": "visible_sp",
+							"value": "",
+							"type": "text"
+						}
+					]
+				},
+				"url": "http://127.0.0.1:8000/api/specialty"
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:8000/api/specialty/<int:specialty_id>",
+			"request": {
+				"auth": {
+					"type": "apikey",
+					"apikey": {
+						"value": "Token",
+						"key": "Authorization",
+						"in": "header"
+					}
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "visible_sp",
+							"value": "",
+							"type": "text"
+						},
+						{
+							"key": "sp_name",
+							"value": "",
+							"type": "text"
+						}
+					]
+				},
+				"url": "http://127.0.0.1:8000/api/specialty/<int:specialty_id>"
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:8000/api/specialty/<int:specialty_id>",
+			"request": {
+				"auth": {
+					"type": "apikey",
+					"apikey": {
+						"value": "Token",
+						"key": "Authorization",
+						"in": "header"
+					}
+				},
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": []
+				},
+				"url": "http://127.0.0.1:8000/api/specialty/<int:specialty_id>"
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:8000/api/listcomment",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "apikey",
+					"apikey": {
+						"value": "Token",
+						"key": "Authorization",
+						"in": "header"
+					}
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "",
+						"value": "qalb",
+						"type": "text",
+						"disabled": true
+					},
+					{
+						"key": "",
+						"value": "true",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": []
+				},
+				"url": "http://127.0.0.1:8000/api/listcomment"
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:8000/api/listcomment",
+			"request": {
+				"auth": {
+					"type": "apikey",
+					"apikey": {
+						"value": "Token",
+						"key": "Authorization",
+						"in": "header"
+					}
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "comment_id",
+							"value": "",
+							"type": "text"
+						},
+						{
+							"key": "doctor_id",
+							"value": "",
+							"type": "text"
+						}
+					]
+				},
+				"url": "http://127.0.0.1:8000/api/listcomment"
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:8000/api/listcomment/<int:list_comment_id>",
+			"request": {
+				"auth": {
+					"type": "apikey",
+					"apikey": {
+						"value": "Token",
+						"key": "Authorization",
+						"in": "header"
+					}
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "comment_id",
+							"value": "",
+							"type": "text"
+						},
+						{
+							"key": "doctor_id",
+							"value": "",
+							"type": "text"
+						}
+					]
+				},
+				"url": "http://127.0.0.1:8000/api/listcomment/<int:list_comment_id>"
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:8000/api/listcomment/<int:list_comment_id>",
+			"request": {
+				"auth": {
+					"type": "apikey",
+					"apikey": {
+						"value": "Token",
+						"key": "Authorization",
+						"in": "header"
+					}
+				},
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": []
+				},
+				"url": "http://127.0.0.1:8000/api/listcomment/<int:list_comment_id>"
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:8000/api/listvisit",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "apikey",
+					"apikey": {
+						"value": "Token",
+						"key": "Authorization",
+						"in": "header"
+					}
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": []
+				},
+				"url": "http://127.0.0.1:8000/api/listvisit"
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:8000/api/listvisit",
+			"request": {
+				"auth": {
+					"type": "apikey",
+					"apikey": {
+						"value": "Token",
+						"key": "Authorization",
+						"in": "header"
+					}
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "visit_id",
+							"value": "",
+							"type": "text"
+						},
+						{
+							"key": "doctor_id",
+							"value": "",
+							"type": "text"
+						}
+					]
+				},
+				"url": "http://127.0.0.1:8000/api/listvisit"
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:8000/api/listvisit/<int:list_visit_id>",
+			"request": {
+				"auth": {
+					"type": "apikey",
+					"apikey": {
+						"value": "Token",
+						"key": "Authorization",
+						"in": "header"
+					}
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "doctor_id",
+							"value": "",
+							"type": "text"
+						},
+						{
+							"key": "visit_id",
+							"value": "",
+							"type": "text"
+						}
+					]
+				},
+				"url": "http://127.0.0.1:8000/api/listvisit/<int:list_visit_id>"
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:8000/api/listvisit/<int:list_visit_id>",
+			"request": {
+				"auth": {
+					"type": "apikey",
+					"apikey": {
+						"value": "Token",
+						"key": "Authorization",
+						"in": "header"
+					}
+				},
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": []
+				},
+				"url": "http://127.0.0.1:8000/api/listvisit/<int:list_visit_id>"
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:8000/api/customer/login",
+			"request": {
+				"auth": {
+					"type": "apikey",
+					"apikey": {
+						"value": "Token",
+						"key": "Authorization",
+						"in": "header"
+					}
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "phone_num",
+							"value": "",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "",
+							"type": "text"
+						}
+					]
+				},
+				"url": "http://127.0.0.1:8000/api/customer/login"
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:8000/api/doctor/login",
+			"request": {
+				"auth": {
+					"type": "apikey",
+					"apikey": {
+						"value": "Token",
+						"key": "Authorization",
+						"in": "header"
+					}
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "medical_num",
+							"value": "",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "",
+							"type": "text"
+						}
+					]
+				},
+				"url": "http://127.0.0.1:8000/api/doctor/login"
+			},
+			"response": []
+		}
+	]
+}
